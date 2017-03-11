@@ -1,0 +1,8 @@
+KEY,名字,资源(除了资源其他没有的不填N),能否被OBJ影响,下一级,是否为空,是否能穿过格子掉落,描述
+key,name,resource,iseffect,nextlevel,isnull,ismovedown,描述
+X,X,N,,,,Y,普通地板
+W,W,N,,,,Y,
+E,E,N,,,Y,Y,空
+N,N,N,,,Y,,不能穿透的格子
+D,di_1,SUB/board/board,Y,X,,Y,一级地板
+D2,di_2,SUB/board/board,Y,di_1,,Y,二级地板

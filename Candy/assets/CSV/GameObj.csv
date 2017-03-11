@@ -1,0 +1,15 @@
+KEY 不允许使用N,类型,名字,资源,是否能掉落,移动,三消,资源类型,被技能消除,影响底层,影响顶层,被旁边消除,影响周围,下一级,描述
+key,type,name,resource,iscanmovedown,move,remove,resourcetype,removebyskill,effectsub,effecttop,removebyeffect,effectround,nextlevel,描述
+A,1,hong,OBJ/basic/basic,Y,Y,Y,1,Y,Y,Y,,Y,,描述
+B,2,huang,OBJ/basic/basic,Y,Y,Y,1,Y,Y,Y,,Y,,黄色糖
+C,3,lan,OBJ/basic/basic,Y,Y,Y,1,Y,Y,Y,,Y,,描述
+D,4,lv,OBJ/basic/basic,Y,Y,Y,1,Y,Y,Y,,Y,,描述
+E,5,zi,OBJ/basic/basic,Y,Y,Y,1,Y,Y,Y,,Y,,描述
+F,6,cheng,OBJ/basic/basic,Y,Y,Y,1,Y,Y,Y,,Y,,青色糖
+G,7,cai,OBJ/basic/basic,Y,Y,Y,1,Y,Y,Y,,Y,,彩球
+Q,8,dangao1,OBJ/obstacle/obstacle,,N,,2,Y,,,Y,,,方形巧克力1
+Q2,9,dangao2,OBJ/obstacle/obstacle,,N,,2,Y,,,Y,,Q,方形巧克力2
+Q3,10,dangao3,OBJ/obstacle/obstacle,,N,,2,Y,,,Y,,Q2,方形巧克力3
+T,11,qiaokeli1,OBJ/obstacle/obstacle,Y,Y,,2,Y,,,Y,,,心形巧克力
+T2,12,qiaokeli2,OBJ/obstacle/obstacle,Y,Y,,2,Y,,,Y,,T,心形巧克力2
+N,13,,,,,,,,,,,,,开始为空

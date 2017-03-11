@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ym.refpackage.Sjtg.x25"
+    android:versionCode="2"
+    android:versionName="2.0.2" >
+
+   <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="24" />
+
+      <!-- ############### 个推SDK权限配置开始 ############### -->
+    <!-- 自定义权限 -->
+    <uses-permission android:name="getui.permission.GetuiService.com.ym.refpackage.Sjtg.x25" />
+
+    <permission
+        android:name="getui.permission.GetuiService.com.ym.refpackage.Sjtg.x25"
+        android:protectionLevel="normal" >
+    </permission>
+    <!-- ############### 个推SDK权限配置结束 ############### -->
+  
+    <application
+        android:name="hdgame.zhuoyian.candy.App"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@+string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        <activity
+            android:name="hdgame.zhuoyian.candy.AppActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+          <!-- ############### 渠道号设置  ############### -->
+        <!-- 小美 -->
+        <meta-data
+            android:name="YM_CPID"
+            android:value="10036_300_35" />
+        <!-- 冰峰谷 -->
+        <meta-data
+            android:name="hKey"
+            android:value="d783527942e799241c2f5c892c669c30" />
+        <!-- 掌支付 -->
+        <meta-data
+            android:name="ZZF_QD"
+            android:value="" />
+
+        <!-- ############### 渠道号设置  ############### -->
+
+
+        <!-- ###############zhang zhi fu start############### -->
+        <meta-data
+            android:name="ZZF_BUSINESSID"
+            android:value="1000100020000586" />
+        <meta-data
+            android:name="ZZF_KEY"
+            android:value="81EC7D7F76B344A09EF28A7023CEC7C4" />
+        <meta-data
+            android:name="ZZF_APPID"
+            android:value="2335" />
+        <!-- ###############zhang zhi fu end############### -->
+
+
+        <!-- ############### yi jie start config ############### -->
+        <!-- 易接应用id设置 -->
+        <meta-data
+            android:name="com.snowfish.appid"
+            android:value="{0A1C3A4D-07FF738D}" >
+        </meta-data>
+        <!-- ############### yi jie end config ############### -->
+
+
+          <!-- ############### da mai sttar config ############### -->
+           <meta-data
+            android:name="MAI_MSA"
+            android:value="fzhtp7oh1zthm2ewsoqlt9ht" >
+        </meta-data>
+         <meta-data
+            android:name="MAI_CHANNELID"
+            android:value="mpay_zya_20" >
+        </meta-data>
+
+        <!-- ############### 个推SDK配置开始 ############### -->
+        <!-- 配置的第三方参数属性 -->
+        <meta-data
+            android:name="PUSH_APPID"
+            android:value="lK5hlspuwF7fqF8TBzEat2" />
+        <meta-data
+            android:name="PUSH_APPKEY"
+            android:value="ZhTgZJoYAW8mkGww5riZe8" />
+        <meta-data
+            android:name="PUSH_APPSECRET"
+            android:value="LUQTATGSMu5oJYTxy3iVF9" />
+
+        <!-- 配置第三方Receiver -->
+        <receiver
+            android:name="com.zhuoyian.pluginsdk.MyReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.lK5hlspuwF7fqF8TBzEat2" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.igexin.download.DownloadProvider"
+            android:authorities="downloads.com.ym.refpackage.Sjtg.x25"
+            android:exported="true"
+            android:process=":pushservice" />
+        <!-- ############### 个推SDK配置结束 ############### -->
+     
+    </application>
+
+</manifest>

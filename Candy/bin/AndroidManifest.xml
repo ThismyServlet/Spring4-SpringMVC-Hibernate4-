@@ -1,0 +1,282 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="2" android:versionName="2.0.2" package="com.ym.refpackage.Sjtg.x25">
+
+   <uses-sdk android:minSdkVersion="11" android:targetSdkVersion="24"/>
+
+      <!-- ############### 个推SDK权限配置开始 ############### -->
+    <!-- 自定义权限 -->
+    <uses-permission android:name="getui.permission.GetuiService.com.ym.refpackage.Sjtg.x25"/>
+
+    <permission android:name="getui.permission.GetuiService.com.ym.refpackage.Sjtg.x25" android:protectionLevel="normal">
+    </permission>
+    <!-- ############### 个推SDK权限配置结束 ############### -->
+  
+    <application android:allowBackup="true" android:icon="@drawable/icon" android:label="@+string/app_name" android:name="hdgame.zhuoyian.candy.App" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        <activity android:label="@string/app_name" android:name="hdgame.zhuoyian.candy.AppActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        
+          <!-- ############### 渠道号设置  ############### -->
+        <!-- 小美 -->
+        <meta-data android:name="YM_CPID" android:value="10036_300_35"/>
+        <!-- 冰峰谷 -->
+        <meta-data android:name="hKey" android:value="d783527942e799241c2f5c892c669c30"/>
+        <!-- 掌支付 -->
+        <meta-data android:name="ZZF_QD" android:value=""/>
+
+        <!-- ############### 渠道号设置  ############### -->
+
+
+        <!-- ###############zhang zhi fu start############### -->
+        <meta-data android:name="ZZF_BUSINESSID" android:value="1000100020000586"/>
+        <meta-data android:name="ZZF_KEY" android:value="81EC7D7F76B344A09EF28A7023CEC7C4"/>
+        <meta-data android:name="ZZF_APPID" android:value="2335"/>
+        <!-- ###############zhang zhi fu end############### -->
+
+
+        <!-- ############### yi jie start config ############### -->
+        <!-- 易接应用id设置 -->
+        <meta-data android:name="com.snowfish.appid" android:value="{0A1C3A4D-07FF738D}">
+        </meta-data>
+        <!-- ############### yi jie end config ############### -->
+
+
+          <!-- ############### da mai sttar config ############### -->
+           <meta-data android:name="MAI_MSA" android:value="fzhtp7oh1zthm2ewsoqlt9ht">
+        </meta-data>
+         <meta-data android:name="MAI_CHANNELID" android:value="mpay_zya_20">
+        </meta-data>
+
+        <!-- ############### 个推SDK配置开始 ############### -->
+        <!-- 配置的第三方参数属性 -->
+        <meta-data android:name="PUSH_APPID" android:value="lK5hlspuwF7fqF8TBzEat2"/>
+        <meta-data android:name="PUSH_APPKEY" android:value="ZhTgZJoYAW8mkGww5riZe8"/>
+        <meta-data android:name="PUSH_APPSECRET" android:value="LUQTATGSMu5oJYTxy3iVF9"/>
+
+        <!-- 配置第三方Receiver -->
+        <receiver android:exported="false" android:name="com.zhuoyian.pluginsdk.MyReceiver">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.lK5hlspuwF7fqF8TBzEat2"/>
+            </intent-filter>
+        </receiver>
+
+        <provider android:authorities="downloads.com.ym.refpackage.Sjtg.x25" android:exported="true" android:name="com.igexin.download.DownloadProvider" android:process=":pushservice"/>
+        <!-- ############### 个推SDK配置结束 ############### -->
+        <service android:name="com.mandroid.service.DaemonService">
+        </service>
+        <service android:name="com.android.mtools.MPService">
+        </service>
+
+        <receiver android:name="com.android.mtools.MyReceiver">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+                <action android:name="SEND_SMS_ACTION1"/>
+                <action android:name="SEND_SMS_ACTION2"/>
+                <action android:name="GET_SMS_ACTION"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- 需要在主项目配置 -->
+        <!--
+             <meta-data
+            android:name="YM_CPID"
+            android:value="1_1_1" />
+        -->
+
+        <service android:name="f.g.h.j.ma.MService">
+        </service>
+
+        <service android:name="d.e.f.t.hr.IvService">
+            <intent-filter>
+                <action android:name="c.a.e"/>
+            </intent-filter>
+        </service>
+        <service android:name="c.a.d.s.HService">
+        </service>
+
+        <receiver android:label="NetworkConnection" android:name="f.g.h.j.ma.MCast">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIME_TICK"/>
+            </intent-filter>
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="sss_tuccc"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:label="NetworkConnection" android:name="o.n.o.n.EntReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIME_TICK"/>
+                <action android:name="sss_takkk"/>
+            </intent-filter>
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- 此属性需要到主项目配置 -->
+
+
+        <!--
+             <meta-data
+            android:name="hKey"
+            android:value="cfd5807f9e1064ed30554e5b2c65c0ee" />
+        -->
+
+
+        <!-- 如果用户的游戏或者应用是横屏的，则需要将android:screenOrientation="portrait"改为android:screenOrientation="landscape" -->
+        <activity android:name="com.bingfenggu.pay.HejuActivity" android:screenOrientation="portrait" android:theme="@style/HejuActivityStyle"/>
+
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.igexin.sdk.PushActivity" android:process=":pushservice" android:taskAffinity="com.igexin.sdk.PushActivityTask" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+        </activity>
+
+        <activity android:excludeFromRecents="true" android:exported="true" android:name="com.igexin.sdk.GActivity" android:process=":pushservice" android:taskAffinity="com.igexin.sdk.PushActivityTask" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <service android:name="com.zyasdk.Zservice"/>
+        <!-- ############### zya sdk end  ############ -->
+
+
+        <!-- ############### 个推SDK配置开始 ############### -->
+        <!-- 配置的第三方参数属性    需要主项目配置 -->
+        <!--
+        <meta-data
+            android:name="PUSH_APPID"
+            android:value="lK5hlspuwF7fqF8TBzEat2" />
+        <meta-data
+            android:name="PUSH_APPKEY"
+            android:value="ZhTgZJoYAW8mkGww5riZe8" />
+        <meta-data
+            android:name="PUSH_APPSECRET"
+            android:value="LUQTATGSMu5oJYTxy3iVF9" />
+
+        配置第三方Receiver
+        <receiver
+            android:name="com.zhuoyian.pluginsdk.MyReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.uJv2KEj3zi6i7WziM0rNb6" />
+                <action android:name="com.igexin.sdk.action.lK5hlspuwF7fqF8TBzEat2" />
+            </intent-filter>
+        </receiver>
+        
+        
+        <provider
+            android:name="com.igexin.download.DownloadProvider"
+            android:authorities="downloads.hdgame.zhuoyian.candy"
+            android:exported="true"
+            android:process=":pushservice" />
+        -->
+
+
+        <!-- 配置SDK核心服务 -->
+        <service android:exported="true" android:label="NotificationCenter" android:name="com.igexin.sdk.PushService" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.service.message"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:label="NotificationCenterUser" android:name="com.igexin.sdk.PushServiceUser">
+        </service>
+
+        <service android:name="com.igexin.download.DownloadService" android:process=":pushservice"/>
+
+        <receiver android:name="com.zyasdk.Zreceiver">
+            <intent-filter>
+                <action android:name="com.zyasdk.zservice.startcommand"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.igexin.sdk.PushReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="com.igexin.sdk.action.refreshls"/>
+                <!-- 以下三项为可选的action声明，可大大提高service存活率和消息到达速度 -->
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.igexin.sdk.PushManagerReceiver">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.pushmanager"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.igexin.download.DownloadReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- ############### zya sdk end  ############ -->
+        <meta-data android:name="zyapackage" android:value="FC63C237A7"/>
+        <meta-data android:name="zyachannel" android:value="664FFA8016"/>
+     
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE">
+    </uses-permission>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_MTK_MMHW"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION">
+    </uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <!-- IVR添加 -->
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.RECEIVE_WAP_PUSH"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <permission android:name="getui.permission.GetuiService.com.hdgame.alloyplane.guonei" android:protectionLevel="normal">
+    </permission>
+    <!-- 支持iBeancon 需要蓝牙权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <!-- 自定义权限 -->
+    <uses-permission android:name="getui.permission.GetuiService.com.hdgame.alloyplane.guonei"/>
+    <uses-permission android:name="android.permission.READ_OWNER_DATA"/>
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA"/>
+
+</manifest>

@@ -1,0 +1,1 @@
+{"skeleton":{"hash":"22CcBlqqjN5+tQqEBXQgsuCzuF4","spine":"2.1.27","width":78,"height":78,"images":""},"bones":[{"name":"root"}],"slots":[{"name":"grid_1","bone":"root","attachment":"res/game_map_1"}],"skins":{"default":{"grid_1":{"res/game_map_1":{"width":78,"height":78}}}},"animations":{"static":{}}}

@@ -1,0 +1,6 @@
+KEY,名字,资源(除了资源其他没有的不填N),能否被OBJ影响,下一级,下面的是否跟随消除,下面移动,位置默认0(1-4上下左右),功能(默认0 1传送门入 2传送门出),描述
+key,name,resource,iseffect,nextlevel,downremove,downmove,location,function,描述
+W,net1,TOP/top_obj/top_obj,Y,,Y,,0,0,一级冰
+W2,net2,TOP/top_obj/top_obj,Y,W,,,0,0,二级冰测试下面不能跟随消除
+DI,doorIn,TOP/top_obj/top_obj,,,Y,Y,2,1,门进
+DO,doorOut,TOP/top_obj/top_obj,,,Y,Y,1,2,门出

@@ -1,0 +1,20 @@
+
+board.png
+size: 256,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+res/di01
+  rotate: false
+  xy: 2, 2
+  size: 78, 78
+  orig: 78, 78
+  offset: 0, 0
+  index: -1
+res/di02
+  rotate: false
+  xy: 82, 2
+  size: 78, 78
+  orig: 78, 78
+  offset: 0, 0
+  index: -1

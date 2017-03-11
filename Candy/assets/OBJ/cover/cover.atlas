@@ -1,0 +1,62 @@
+
+cover.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+quan2
+  rotate: false
+  xy: 406, 144
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+skill_1
+  rotate: false
+  xy: 2, 124
+  size: 200, 120
+  orig: 200, 120
+  offset: 0, 0
+  index: -1
+skill_2
+  rotate: false
+  xy: 2, 2
+  size: 200, 120
+  orig: 200, 120
+  offset: 0, 0
+  index: -1
+skill_3
+  rotate: false
+  xy: 204, 124
+  size: 200, 120
+  orig: 200, 120
+  offset: 0, 0
+  index: -1
+skill_4
+  rotate: false
+  xy: 204, 2
+  size: 200, 120
+  orig: 200, 120
+  offset: 0, 0
+  index: -1
+skill_aoe
+  rotate: false
+  xy: 406, 64
+  size: 78, 78
+  orig: 78, 78
+  offset: 0, 0
+  index: -1
+skill_h
+  rotate: false
+  xy: 508, 166
+  size: 78, 78
+  orig: 78, 78
+  offset: 0, 0
+  index: -1
+skill_v
+  rotate: false
+  xy: 588, 166
+  size: 78, 78
+  orig: 78, 78
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,19 @@
+{
+"skeleton": { "hash": "WSep+A2j0xjp+qky/gqT5BED/1g", "spine": "2.1.27", "width": 78, "height": 78, "images": "" },
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "grid_0", "bone": "root", "attachment": "res/game_map_0" }
+],
+"skins": {
+	"default": {
+		"grid_0": {
+			"res/game_map_0": { "width": 78, "height": 78 }
+		}
+	}
+},
+"animations": {
+	"static": {}
+}
+}

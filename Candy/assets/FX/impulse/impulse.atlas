@@ -1,0 +1,118 @@
+
+impulse.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+res/bz01
+  rotate: false
+  xy: 516, 880
+  size: 150, 138
+  orig: 150, 138
+  offset: 0, 0
+  index: -1
+res/bz010
+  rotate: false
+  xy: 154, 103
+  size: 150, 138
+  orig: 150, 138
+  offset: 0, 0
+  index: -1
+res/bz011
+  rotate: false
+  xy: 306, 243
+  size: 150, 138
+  orig: 150, 138
+  offset: 0, 0
+  index: -1
+res/bz012
+  rotate: false
+  xy: 668, 600
+  size: 150, 138
+  orig: 150, 138
+  offset: 0, 0
+  index: -1
+res/bz02
+  rotate: false
+  xy: 2, 243
+  size: 150, 138
+  orig: 150, 138
+  offset: 0, 0
+  index: -1
+res/bz03
+  rotate: false
+  xy: 516, 740
+  size: 150, 138
+  orig: 150, 138
+  offset: 0, 0
+  index: -1
+res/bz04
+  rotate: false
+  xy: 668, 880
+  size: 150, 138
+  orig: 150, 138
+  offset: 0, 0
+  index: -1
+res/bz05
+  rotate: false
+  xy: 2, 103
+  size: 150, 138
+  orig: 150, 138
+  offset: 0, 0
+  index: -1
+res/bz06
+  rotate: false
+  xy: 154, 243
+  size: 150, 138
+  orig: 150, 138
+  offset: 0, 0
+  index: -1
+res/bz07
+  rotate: false
+  xy: 516, 600
+  size: 150, 138
+  orig: 150, 138
+  offset: 0, 0
+  index: -1
+res/bz08
+  rotate: false
+  xy: 668, 740
+  size: 150, 138
+  orig: 150, 138
+  offset: 0, 0
+  index: -1
+res/bz09
+  rotate: false
+  xy: 820, 880
+  size: 150, 138
+  orig: 150, 138
+  offset: 0, 0
+  index: -1
+res/efx_Burst
+  rotate: false
+  xy: 2, 514
+  size: 512, 504
+  orig: 512, 504
+  offset: 0, 0
+  index: -1
+res/guiqi45
+  rotate: false
+  xy: 820, 750
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+res/light
+  rotate: false
+  xy: 2, 383
+  size: 504, 129
+  orig: 504, 129
+  offset: 0, 0
+  index: -1
+res/light2
+  rotate: false
+  xy: 2, 2
+  size: 160, 99
+  orig: 160, 99
+  offset: 0, 0
+  index: -1
